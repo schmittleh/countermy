@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        background: url(bg.jpg) center center no-repeat;
+        background-size: cover;
+
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        background-color: rgb(92, 100, 92);
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+      }
+
+      #resultado {
+        color: white;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button onclick="contar()">mais</button>
+      <button onclick="menos()">menos</button>
+    </div>
+
+    <p id="resultado">0</p>
+
+    <script>
+      var numero = 0;
+
+      function contar() {
+        numero = numero + 1;
+        resultado.innerText = numero;
+      }
+
+      function menos() {
+        numero = numero - 1;
+        resultado.innerText = numero;
+      }
+    </script>
+  </body>
+</html>
